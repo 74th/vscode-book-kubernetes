@@ -1,0 +1,9 @@
+{
+  "yaml.schemas": {
+    "https://json.schemastore.org/kustomization.json": [
+      "*-kustomization.yaml",
+      "!manifests/*-kustomization.yaml"
+    ],
+    "kubernetes": ["manifests/*.yaml", "!kustomization.yaml"]
+  }
+}
